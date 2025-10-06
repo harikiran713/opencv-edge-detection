@@ -60,7 +60,7 @@ Java_com_example_opencv_MainActivity_processYUVFrame(
     memcpy(bitmapPixels, rgba.data, rgba.total() * rgba.elemSize());
     AndroidBitmap_unlockPixels(env, bitmapObj);
 
-    // ✅ Release Java array
+   
     env->ReleaseByteArrayElements(yuvData, yuvBytes, JNI_ABORT);
 
     return bitmapObj;
