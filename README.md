@@ -197,26 +197,8 @@ Java_com_example_opencvapp_MainActivity_processFrame(
 
 ---
 
-## 🧾 Git Commit Guidelines
 
-| Type        | Description                                  |
-| ----------- | -------------------------------------------- |
-| `feat:`     | Add new feature (e.g., edge detection logic) |
-| `fix:`      | Resolve bug or crash                         |
-| `docs:`     | Update README or comments                    |
-| `refactor:` | Code restructuring                           |
-| `chore:`    | Build, Gradle, or dependency updates         |
 
-**Examples:**
-
-```bash
-git commit -m "feat: add JNI interface for OpenCV edge detection"
-git commit -m "docs: update README with setup instructions"
-```
-
-Make small, meaningful commits instead of one large “final commit.”
-
----
 
 ## 👨‍💻 Author
 
