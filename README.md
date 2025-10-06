@@ -188,10 +188,10 @@ Open `index.html` in a browser to see a static processed image or base64 frame.
 📷 **Insert your screenshots here**
 
 ```markdown
-![Main Screen](./screenshots/main_screen.png)
+![./screenshots/main_screen.png]
 ```
 
-🎥 **Add Demo Video (Optional)**
+🎥 **Demo Video **
 
 [YouTube Demo](https://youtube.com/shorts/Kuh7uaTOBLE?feature=share)
 
