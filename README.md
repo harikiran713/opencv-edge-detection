@@ -57,44 +57,35 @@ Web Viewer (TypeScript)
 
 ---
 
-## 📁 Project Structure (Updated)
-
-Based on your VS Code project layout:
+## 📁 Project Structure
 
 ```
 project-root/
 │
 ├── app/
-│   ├── build/                         # Build output (auto-generated)
 │   ├── src/
-│   │   ├── androidTest/java/com/example/opencvapp/
-│   │   │   └── ExampleInstrumentedTest.kt
 │   │   ├── main/
 │   │   │   ├── cpp/                   # Native C++ code
 │   │   │   │   ├── CMakeLists.txt
 │   │   │   │   └── native-lib.cpp
 │   │   │   ├── java/com/example/opencvapp/
 │   │   │   │   └── MainActivity.kt    # Main Activity (UI + JNI call)
-│   │   │   ├── res/                   # Layouts, strings, colors, etc.
+│   │   │   ├── res/                   # Layouts, strings, etc.
 │   │   │   └── AndroidManifest.xml
-│   │   └── test/java/com/example/opencvapp/
-│   │       └── ExampleUnitTest.kt
-│   │
-│   ├── build.gradle.kts               # Module-level Gradle config
+│   │   └── test/
+│   ├── build.gradle.kts
 │   ├── proguard-rules.pro
 │
-├── gradle/                            # Gradle wrapper files
-├── .idea/                             # IDE configuration
-├── .gradle/                           # Gradle cache
-├── .kotlin/                           # Kotlin compiler metadata
-├── build.gradle.kts                   # Root Gradle file
-├── settings.gradle.kts                # Project inclusion settings
-├── gradle.properties                  # Global Gradle properties
-├── local.properties                   # Local SDK/NDK paths
-├── gradlew                            # Gradle wrapper script (Unix)
-├── gradlew.bat                        # Gradle wrapper script (Windows)
-├── .gitignore                         # Git ignore configuration
-└── web/                               # TypeScript web viewer (to add)
+├── screenshots/
+│   └── main_screen.png
+│
+├── gradle/
+├── build.gradle.kts
+├── settings.gradle.kts
+├── gradle.properties
+├── local.properties
+├── .gitignore
+└── web/
     ├── index.html
     ├── style.css
     ├── main.ts
@@ -146,28 +137,7 @@ include_directories("C:/OpenCV-android-sdk/sdk/native/jni/include")
 * Click **Run ▶️**
 * Tap **“Start C++ Edge Detection”** to view real-time edge output
 
----
 
-## 🌐 Web Viewer Setup
-
-#### 1. Move into the web folder
-
-```bash
-cd web
-npm install
-```
-
-#### 2. Compile TypeScript
-
-```bash
-tsc
-```
-
-#### 3. Run the Viewer
-
-Open `index.html` in a browser to see a static processed image or base64 frame.
-
----
 
 ## 🌟 Features
 
@@ -185,13 +155,11 @@ Open `index.html` in a browser to see a static processed image or base64 frame.
 
 ## 🖼 Demo & Screenshots
 
-📷 **Insert your screenshots here**
+**Main Screen**
 
-```markdown
-![./screenshots/main_screen.png]
-```
+![Main Screen](https://github.com/harikiran713/opencv-edge-detection/blob/main/screenshots/main_screen.png?raw=true)
 
-🎥 **Demo Video **
+🎥 **Demo Video**
 
 [YouTube Demo](https://youtube.com/shorts/Kuh7uaTOBLE?feature=share)
 
