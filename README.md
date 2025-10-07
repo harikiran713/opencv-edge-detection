@@ -159,10 +159,11 @@ include_directories("C:/OpenCV-android-sdk/sdk/native/jni/include")
 
 ![Main Screen](https://github.com/harikiran713/opencv-edge-detection/blob/main/screenshots/main_screen.png?raw=true)
 ![working ](https://github.com/harikiran713/opencv-edge-detection/blob/main/screenshots/image.png?raw=true)
+![human pic ](https://github.com/harikiran713/opencv-edge-detection/blob/main/screenshots/hari.png?raw=true)
 
 🎥 **Demo Video**
 
-[YouTube Demo](https://youtube.com/shorts/Kuh7uaTOBLE?feature=share)
+[YouTube Demo](https://youtube.com/shorts/xhBdc-hijig?feature=share)
 
 📱 **Download APK**
 
