@@ -12,7 +12,6 @@ This project demonstrates **real-time edge detection** using the Android Camera 
 4. [Project Structure](#project-structure)
 5. [Installation & Setup](#installation--setup)
 6. [Android App Instructions](#android-app-instructions)
-7. [Web Viewer Setup](#web-viewer-setup)
 8. [Features](#features)
 9. [Demo & Screenshots](#demo--screenshots)
 10. [Troubleshooting](#troubleshooting)
@@ -36,7 +35,6 @@ It also includes a **TypeScript web component** to visualize processed frames in
 | Native Processing   | OpenCV (C++)            |
 | Rendering           | OpenGL ES 2.0           |
 | Native Interface    | JNI + NDK + CMake       |
-| Web Viewer          | TypeScript + HTML + CSS |
 | Version Control     | Git + GitHub / GitLab   |
 
 ---
@@ -51,8 +49,7 @@ JNI Bridge (Java ↔ C++)
 OpenCV (C++ Edge Detection)
         ↓
 OpenGL Renderer (TextureView)
-        ↓
-Web Viewer (TypeScript)
+
 ```
 
 ---
@@ -85,11 +82,7 @@ project-root/
 ├── gradle.properties
 ├── local.properties
 ├── .gitignore
-└── web/
-    ├── index.html
-    ├── style.css
-    ├── main.ts
-    └── tsconfig.json
+
 ```
 
 ---
@@ -103,7 +96,6 @@ project-root/
 | Android Studio       | Latest version                               |
 | Android NDK + CMake  | Installed via SDK Tools                      |
 | OpenCV Android SDK   | [Download here](https://opencv.org/releases) |
-| Node.js + TypeScript | For the web viewer                           |
 | Git                  | For version control and submission           |
 
 ---
@@ -147,9 +139,7 @@ include_directories("C:/OpenCV-android-sdk/sdk/native/jni/include")
 | ⚙️ C++ Frame Processing    | Performs Canny edge detection using OpenCV (C++) |
 | 🔁 JNI Bridge              | Enables communication between Kotlin and C++     |
 | 🎨 OpenGL ES Rendering     | Displays processed frames at ~15 FPS             |
-| 🌐 TypeScript Web Viewer   | Shows a processed static frame in the browser    |
-| 🧮 Optional FPS Counter    | Measures and displays frame rate                 |
-| 🕹️ Toggle Modes           | Switch between raw and processed camera view     |
+
 
 ---
 
@@ -171,19 +161,7 @@ include_directories("C:/OpenCV-android-sdk/sdk/native/jni/include")
 
 ---
 
-## 🧩 JNI Sample Code
 
-```cpp
-extern "C"
-JNIEXPORT void JNICALL
-Java_com_example_opencvapp_MainActivity_processFrame(
-    JNIEnv *env, jobject, jlong inputAddr, jlong outputAddr) {
-
-    cv::Mat &input = *(cv::Mat *)inputAddr;
-    cv::Mat &output = *(cv::Mat *)outputAddr;
-    cv::Canny(input, output, 80, 150);
-}
-```
 
 ---
 
